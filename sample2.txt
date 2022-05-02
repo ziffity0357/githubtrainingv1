@@ -1,4 +1,0 @@
-this is another file 
-Used to push the file
-
-This is sample2

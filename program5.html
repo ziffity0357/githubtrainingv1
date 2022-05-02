@@ -1,0 +1,92 @@
+<html>
+<body>
+<div id="new">
+<h4>Registration Form</h4>
+<link rel='stylesheet' href='css1.css' type='text/css' />
+<table>
+<div>
+<tr>
+<td>First Name</td>
+<td><input type="text" id="fname" name="firstname" required></td></tr>
+<tr><td></td><td>
+<span class="rq" id="errorf"></span></td></tr>
+</div>
+<div>
+<tr>
+<td>Last Name</td><td><input type="text" id="lname" name="firstname"/></td></tr>
+<tr><td></td><td>
+<span class="rq" id="errorl"></span></td></tr>
+</div>
+<div>
+<tr>
+<td>Gender</td><td><input type="radio" name="gender" id="gen">Female
+<input type="radio" name="gender" id="gen">Male</td></tr>
+<tr><td></td><td>
+<span class="rq" id="errorg"></span></td></tr>
+</div>
+<div>
+<tr>
+<td>Age</td><td><input type="text" id="age" name="age" required> </td></tr>
+<tr><td></td><td>
+<span class="rq" id="errora"></span></td></tr>
+</div>
+<div>
+<tr>
+<td>Address</td><td><textarea name="address" id="address"></textarea></td></tr>
+<tr><td></td><td>
+<span class="rq" id="erroradd"></span></td></tr>
+</div>
+<div>
+<tr>
+<td>Email id</td><td><input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></td></tr>
+<tr><td></td><td>
+<span class="rq" id="errore"></span></td></tr>
+</div>
+<div>
+<tr>
+<tr>
+<td>Date Of Birth</td><td><input type="date" id="birthday" name="birthday"></td></tr>
+<tr><td></td><td>
+<span class="rq" id="errord"></span></td></tr>
+<div>
+<tr><td>Program Names</td><td>
+<select>
+<optio>CHOOSE</option>
+<option value="c">C</option>
+<option value="c++">C++</option>
+<option value="js">Javascript</option>
+<option value="java">Java</option>
+</select></td></tr>
+</div>
+<div>
+<tr>
+<td>Blood Group</td><td><input type="text" id="blood" name="blood"> </td>
+</tr></div>
+<div>
+<tr>
+<td>Aadhar No</td><td><input type="text" id="an" name="an"> </td>
+</tr>
+</div>
+</table>
+<input type="button" value="Add" onclick="add()"/>
+</div>
+<div id="div1">
+
+</center>
+</div>
+<script>
+function add()
+{
+var tag = document.createElement("div");
+var text = document.createTextNode("Mobile No");
+tag.appendChild(text);
+var input = document.createElement("input");
+input.setAttribute("type", "text");
+tag.appendChild(input);
+var element = document.getElementById("div1");
+element.appendChild(tag);
+   
+}
+</script>
+</body>
+</html>
