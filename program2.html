@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<html>
+<style>
+.seldemo {
+  background: #A0CFCF;
+  height: 75px;
+  width:250px;
+  border-radius: 15px;
+  padding:20px;
+  font-size:22px;
+  color:#fff;  
+}
+.btns{
+    background-color:#F6B33C;
+    border: #2e6da4;
+  	font-family: Arial, Geneva, Arial, Helvetica,  sans-serif;
+	font-size: 15px;
+    color: #000;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    
+    border-radius: 4px;
+    line-height: 1.5;
+    text-decoration:none;
+} 
+
+</style>
+<link rel='stylesheet' href='css1.css' type='text/css' />
+<body>
+<center>
+
+<h4>CHOOSE ONE ITEM TO KNOW THE DETAILS</h4>
+<div class="seldemo">
+Program Names
+<select id="choose">
+<option selected>CHOOSE</option>
+<option value="trainer">Trainer</option>
+<option value="trainee">Trainee</option>
+
+</select>
+<br><br>
+
+<input type="button" id="btns" value="SUBMIT" onclick="show()">
+</div>
+</center>
+
+<script>
+function show()
+{
+let select=document.getElementById('choose');
+let option=select.options[select.selectedIndex].value;
+window.open(option+".html");
+
+}
+</script>
+</body>
+</html>
+
+
+</body>
+</html> 

@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="css1.css">
+<body>
+<div class="myDiv"><h2>Personal Details</h2></div>
+<center>
+<div>
+<table cellspacing='5px'>
+<tr>
+<td>First Name</td>
+<td><input type="text" name="name" id="fname" onkeyup="validate()"></td>
+</tr>
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="name" id="lname"></td>
+</tr>
+
+
+<tr>
+<td>Address</td>
+<td><textarea name="address" id="fname"></textarea></td>
+</tr>
+<tr>
+<td>Gender</td>
+<td><input type="radio" id="male" name="gender">Male
+<input type="radio" id="female" name="gender">Female</td>
+</tr>
+<tr>
+<td>Department</td>
+<td><select id="dept">
+<option>BSC.CS<option>
+<option>BCA<option>
+<option>MCA<option>
+</select></td>
+</tr>
+<tr>
+<td>Date Of Birth</td>
+<td><input type="date" id="birthday" name="birthday"></td>
+</tr>
+<tr>
+<td>Email id</td>
+<td><input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></td>
+</tr>
+<tr>
+<td>Blood Group</td><td><input type="text" id="blood" name="blood"> </td>
+</tr>
+<tr>
+<td>Age</td><td><input type="text" id="age" name="age"> </td>
+</tr>
+<tr>
+<td>Aadhar No</td><td><input type="text" id="an" name="an"> </td>
+</tr>
+
+<tr>
+<td>Pan Card No</td>
+<td><input type="text" name="pan" id="pan"></td>
+</tr>
+<tr>
+<td></td><td><input type="button" value="Submit" onclick="validate()"/></td></tr>
+</table>
+</div>
+</center>
+
+<script>
+function validate()
+{
+document.getElementById("dept").focus();
+}
+
+</script>
+
+
+</body>
+</html>
